@@ -16,7 +16,7 @@ export const SocketApi = () => {
             console.log('message from server data', data);
         });
         socketData.on('priceVariation', newSubCategory => {
-            replaceData(newSubCategory);
+          //save in state===>  replaceData(newSubCategory);
             console.log('priceVariation data', newSubCategory);
         });
         return socketData;
